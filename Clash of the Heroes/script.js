@@ -78,7 +78,9 @@ const round = (firstHeroStats, secondHeroStats, firstHeroId, secondHeroId) => {
         return firstHeroId;
     } else if (firstHeroStats < secondHeroStats) {
         return secondHeroId;
-    } 
+    } else {
+        return firstHeroId, secondHeroId;
+    }
 }
 
 console.log('%c  Chosen Heroes!', 'font-weight:bold;');
